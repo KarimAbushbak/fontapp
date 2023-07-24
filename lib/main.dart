@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:fontapp/bio_screen.dart';
 import 'package:fontapp/core/routes.dart';
-import 'package:fontapp/main_screen.dart';
+
 import 'package:fontapp/splash_screen.dart';
 
 void main() {
@@ -14,13 +15,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         useMaterial3: true
       ),
-      initialRoute:Routes.mainScreen,
+      initialRoute:Routes.splashScreen,
       routes: {
         Routes.splashScreen:(context)=>SplashScreen(),
-        Routes.mainScreen:(context)=>MainScreen(),
+        Routes.bioScreen:(context)=>BioScreen(),
+
       },
 
       );
