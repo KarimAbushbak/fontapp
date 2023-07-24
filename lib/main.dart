@@ -17,10 +17,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true
       ),
-      initialRoute:Routes.mainscreen,
+      initialRoute:Routes.mainScreen,
       routes: {
         Routes.splashScreen:(context)=>SplashScreen(),
-        Routes.mainscreen:(context)=>MainScreen(),
+        Routes.mainScreen:(context)=>MainScreen(),
       },
 
       );
